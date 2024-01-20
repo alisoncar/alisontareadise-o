@@ -1,0 +1,91 @@
+/* ESTILOS GLOBALES
+-------------------------------------------------- */
+/* Relleno debajo del pie de página y texto del cuerpo más claro */
+
+cuerpo {
+  parte superior acolchada: 3rem;
+  fondo acolchado: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* PERSONALIZA EL CARRUSEL
+-------------------------------------------------- */
+
+/* Clase base del carrusel */
+.carrusel {
+  margen inferior: 4rem;
+}
+/* Desde que posicionamos la imagen, necesitamos ayudar con el título */
+.carrusel-caption {
+  abajo: 3rem;
+  índice z: 10;
+}
+
+/* Declarar alturas debido al posicionamiento del elemento img */
+.artículo-carrusel {
+  altura: 32 rem;
+  color de fondo: #777;
+}
+.artículo-carrusel > img {
+  posición: absoluta;
+  arriba: 0;
+  izquierda: 0;
+  ancho mínimo: 100%;
+  altura: 32 rem;
+}
+
+
+/* CONTENIDO DE MARKETING
+-------------------------------------------------- */
+
+/* Alinea el texto en el centro dentro de las tres columnas debajo del carrusel */
+.mercadeo .col-lg-4 {
+  margen inferior: 1,5 rem;
+  alineación de texto: centro;
+}
+.mercadeo h2 {
+  peso de fuente: 400;
+}
+.marketing .col-lg-4 p {
+  margen derecho: .75rem;
+  margen izquierdo: .75rem;
+}
+
+
+/* Reportajes
+------------------------- */
+
+.featurette-divisor {
+  margen: 5rem 0; /* Espaciar el Bootstrap <hr> más */
+}
+
+/* Reduce los títulos de marketing */
+.featurette-encabezado {
+  peso de fuente: 300;
+  altura de línea: 1;
+  espaciado entre letras: -.05rem;
+}
+
+
+/* CSS RESPONSIVO
+-------------------------------------------------- */
+
+@media (ancho mínimo: 40 em) {
+  /* Aumentar el tamaño del contenido del carrusel */
+  .carrusel-caption p {
+    margen inferior: 1,25 rem;
+    tamaño de fuente: 1,25rem;
+    altura de línea: 1,4;
+  }
+
+  .featurette-encabezado {
+    tamaño de fuente: 50px;
+  }
+}
+
+@media (ancho mínimo: 62em) {
+  .featurette-encabezado {
+    margen superior: 7rem;
+  }
+}
